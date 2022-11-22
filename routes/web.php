@@ -21,6 +21,7 @@ use App\Http\Controllers\CategoryController;
 */
 
 Route::get('/', 'App\Http\Controllers\BlogController@index');
+Route::get('/isi-post/{slug}', 'App\Http\Controllers\BlogController@isiblog')->name('blog.isi');
 Route::get('/home', function () {
     return view('layout');
 })->name('home');
