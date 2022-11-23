@@ -22,6 +22,9 @@ use App\Http\Controllers\CategoryController;
 
 Route::get('/', 'App\Http\Controllers\BlogController@index');
 Route::get('/isi-post/{slug}', 'App\Http\Controllers\BlogController@isiblog')->name('blog.isi');
+Route::get('/list-post', 'App\Http\Controllers\BlogController@list_blog')->name('blog.list');
+Route::get('/list-category/{category}', 'App\Http\Controllers\BlogController@list_category')->name('blog.category');
+Route::get('/cari', 'App\Http\Controllers\BlogController@cari')->name('blog.cari');
 Route::get('/home', function () {
     return view('layout');
 })->name('home');

@@ -48,7 +48,7 @@
                     </div>
                     <div class="form-group">
                         <label>Content</label>
-                        <textarea name="content" class="form-control" id="" cols="30" rows="10"></textarea>
+                        <textarea name="content" class="form-control" id="content" cols="30" rows="10"></textarea>
                     </div>
                     <div class="form-group">
                         <label>Image</label>
@@ -62,4 +62,8 @@
         </div>
     </div>
 </div>
+<script src="https://cdn.ckeditor.com/4.20.0/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace( 'content' );
+</script>
 @endsection

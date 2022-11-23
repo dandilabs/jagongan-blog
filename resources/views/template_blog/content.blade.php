@@ -1,14 +1,17 @@
+<!-- SECTION -->
 @include('template_blog.head')
-    <!-- SECTION -->
-<div class="section">
+	<div class="section">
 		<!-- container -->
-	<div class="container">
-        @yield('isi')
-        @include('template_blog.widget')
-    </div>
-</div>
-@include('template_blog.footer')
+		<div class="container">
+						<!-- row -->
+			<div id="hot-post" class="row hot-post">
+				
+				@yield('isi') <br>
+				
+				@include('template_blog.widget')
+	
 
-
-
-
+		</div>
+	</div>
+	
+	@include('template_blog.footer')
